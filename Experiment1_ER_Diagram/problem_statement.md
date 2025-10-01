@@ -36,10 +36,7 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 | *Session*    | Session_id (PK), Session_type, Session_schedule, Member_id (FK), Trainer_id (FK)  | Represents training sessions. Each session belongs to a trainer & member. |
 | *Attendance* | Attendance_id (PK), Status, Member_id (FK), Session_id (FK)                       | Tracks member’s presence in sessions.                                     |
 | *Payment*    | Payment_id (PK), Payment_date, Amount, Payment_type, Reference_id, Member_id (FK) | Handles member payments for membership or sessions.                       |                      |    |                     |       |
-|        |                     |       |
-|        |                     |       |
-|        |                     |       |
-|        |                     |       |
+
 
 ### Relationships and Constraints
 
@@ -51,10 +48,7 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 | *Conducts*            | Trainer – Session             | One Trainer ↔ Many Sessions | Session (Total), Trainer (Partial)               | Each session is led by one trainer; a trainer may conduct many sessions.  |
 | *Presence in session* | Member – Session – Attendance | Many-to-Many via Attendance | Both Member & Session (Total through Attendance) | Attendance table resolves many-to-many between member & session.          |
 | *Amount collected*    | Member – Payment              | One Member ↔ Many Payments  | Payment (Total), Member (Partial)                | A member may make many payments; each payment belongs to one member.      | |
-|--------------|------------|---------------|-------|
-|              |            |               |       |
-|              |            |               |       |
-|              |            |               |       |
+
 
 ### Assumptions
 - 
