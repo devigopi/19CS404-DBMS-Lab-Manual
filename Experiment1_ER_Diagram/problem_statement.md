@@ -28,15 +28,14 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 ### Entities and Attributes
 
-| Entity | Attributes (PK, FK) | Notes |
-                                                               |
+| *Entity*     | *Attributes*                                                                    | *Notes*                                                                 |
 | -------------- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | *Member*     | Member_id (PK), Name, Membership_type                                             | Represents gym members/customers. Each has unique ID.                     |
 | *Trainer*    | Trainer_id (PK), Name, Specialization                                             | Represents trainers/coaches. Linked to sessions & assigned programs.      |
 | *Program*    | Program_id (PK), Program_name, Description, Schedule                              | Represents workout/fitness programs designed by trainers.                 |
 | *Session*    | Session_id (PK), Session_type, Session_schedule, Member_id (FK), Trainer_id (FK)  | Represents training sessions. Each session belongs to a trainer & member. |
 | *Attendance* | Attendance_id (PK), Status, Member_id (FK), Session_id (FK)                       | Tracks member’s presence in sessions.                                     |
-| *Payment*    | Payment_id (PK), Payment_date, Amount, Payment_type, Reference_id, Member_id (FK) | Handles member payments for membership or sessions.                       |    |                     |       |
+| *Payment*    | Payment_id (PK), Payment_date, Amount, Payment_type, Reference_id, Member_id (FK) | Handles member payments for membership or sessions.                       |                      |    |                     |       |
 |        |                     |       |
 |        |                     |       |
 |        |                     |       |
