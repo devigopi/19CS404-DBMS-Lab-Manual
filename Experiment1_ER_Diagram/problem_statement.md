@@ -51,9 +51,11 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 
 ### Assumptions
-- 
-- 
-- 
+- All IDs (Member_id, Trainer_id, Program_id, Session_id, Payment_id, Attendance_id) are primary keys and unique.
+- Foreign key relationships ensure referential integrity (e.g., a payment cannot exist without a valid member and session).
+- The system assumes each member is assigned at least one trainer and the system records both financial(payments) and non_financial(attendace,schedules) aspects of gym operations.
+  
+  
 
 ---
 
