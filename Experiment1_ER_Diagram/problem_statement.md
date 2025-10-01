@@ -43,7 +43,14 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 
 ### Relationships and Constraints
 
-| Relationship | Cardinality | Participation | Notes |
+| *Relationship*        | *Entities Involved*         | *Cardinality*             | *Participation*                                | *Notes*                                                                 |
+| ----------------------- | ----------------------------- | --------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------- |
+| *Assigned by*         | Member – Trainer              | Many Members ↔ One Trainer  | Member (Total), Trainer (Partial)                | Each member must be assigned a trainer; a trainer may have many members.  |
+| *Specified course*    | Program – Trainer             | Many Programs ↔ One Trainer | Program (Total), Trainer (Partial)               | A program is designed by one trainer; a trainer can create many programs. |
+| *Specified time*      | Member – Session              | Many Sessions ↔ One Member  | Session (Total), Member (Partial)                | A member may attend multiple sessions; each session belongs to a member.  |
+| *Conducts*            | Trainer – Session             | One Trainer ↔ Many Sessions | Session (Total), Trainer (Partial)               | Each session is led by one trainer; a trainer may conduct many sessions.  |
+| *Presence in session* | Member – Session – Attendance | Many-to-Many via Attendance | Both Member & Session (Total through Attendance) | Attendance table resolves many-to-many between member & session.          |
+| *Amount collected*    | Member – Payment              | One Member ↔ Many Payments  | Payment (Total), Member (Partial)                | A member may make many payments; each payment belongs to one member.      | |
 |--------------|------------|---------------|-------|
 |              |            |               |       |
 |              |            |               |       |
