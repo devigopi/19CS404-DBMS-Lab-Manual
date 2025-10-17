@@ -173,6 +173,7 @@ WHERE AGENT_CODE IN ('A003','A008');
 
 **Question 9**
 ---
+<img width="711" height="302" alt="image" src="https://github.com/user-attachments/assets/909d6e8e-b6c6-4ff1-87d0-4e68c4576d80" />
 
 
 
