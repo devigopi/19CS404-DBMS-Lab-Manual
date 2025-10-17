@@ -38,91 +38,125 @@ HAVING condition;
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="926" height="590" alt="image" src="https://github.com/user-attachments/assets/ef56c4dc-5dc9-48cf-97d4-093dc57a8aba" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+SELECT DoctorID,count(*) as TotalPrescriptions
+FROM Prescriptions
+GROUP BY DoctorID;
 ```
 
 **Output:**
 
-![Output1](output.png)
+<img width="671" height="741" alt="image" src="https://github.com/user-attachments/assets/b910eb78-3b5f-4569-8457-e24370f6c107" />
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="922" height="387" alt="image" src="https://github.com/user-attachments/assets/0d15da88-9daf-4db5-9865-472695eda95a" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+SELECT Diagnosis,count(*) as DiagnosisCount
+FROM MedicalRecords
+GROUP BY Diagnosis
+ORDER BY DiagnosisCount DESC
+LIMIT 1;
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="782" height="337" alt="image" src="https://github.com/user-attachments/assets/ad7bc3ee-d03b-40a2-bf54-4bba53af0e09" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="782" height="435" alt="image" src="https://github.com/user-attachments/assets/a78966e8-abbc-4f3a-8b5f-144ae4cfa95d" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+SELECT name,max(income)
+FROM employee
+WHERE city='California'
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="647" height="357" alt="image" src="https://github.com/user-attachments/assets/2f1f04e1-7c0b-41be-bb8c-6c70ea22f71b" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="1212" height="410" alt="image" src="https://github.com/user-attachments/assets/69d4b700-2c10-4a59-8a83-4aff2a88396f" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+SELECT 
+    SUBSTRING(Email,INSTR(Email, '@') + 1) AS EmailDomain, 
+    COUNT(*) AS TotalPatients
+FROM Patients
+GROUP BY EmailDomain;
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1237" height="642" alt="image" src="https://github.com/user-attachments/assets/936bfcbc-deba-48ab-8f7d-920ac074d847" />
+
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="556" height="425" alt="image" src="https://github.com/user-attachments/assets/4a35606a-80cb-4431-8b72-de6fb585abfa" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+SELECT name,LENGTH(name) as length
+FROM customer
+order by LENGTH(name) DESC
+LIMIT 1;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="648" height="342" alt="image" src="https://github.com/user-attachments/assets/f7ffc10e-91ae-4818-b131-d55bc63527b5" />
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="927" height="421" alt="image" src="https://github.com/user-attachments/assets/e0649c80-430c-4cb8-8a6d-2a82341b21a6" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+SELECT MAX(age)-MIN(age) as age_difference
+FROM employee
 ```
 
 **Output:**
+<img width="403" height="357" alt="image" src="https://github.com/user-attachments/assets/a2f0ed5f-5064-473b-a1c1-44516a4a6c78" />
 
-![Output6](output.png)
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="597" height="468" alt="image" src="https://github.com/user-attachments/assets/31445950-f9d7-450c-877c-ef7dd925581f" />
+
+
 
 ```sql
--- Paste your SQL code below for Question 7
+SELECT min(purch_amt) as MINIMUM
+FROM orders
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="406" height="362" alt="image" src="https://github.com/user-attachments/assets/6d42775c-b66c-422e-90bf-a8a1c48243f4" />
+
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1227" height="480" alt="image" src="https://github.com/user-attachments/assets/1c57b426-6d56-4246-9ed9-f7b755b3bb36" />
+
+
 
 ```sql
 -- Paste your SQL code below for Question 8
@@ -134,27 +168,36 @@ HAVING condition;
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="1211" height="435" alt="image" src="https://github.com/user-attachments/assets/3acaa91e-e4a3-493f-a89b-223794dde884" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+SELECT age,AVG(income) 
+FROM employee  
+GROUP BY age
+HAVING AVG(income) BETWEEN 300000 and 500000;
 ```
 
 **Output:**
+<img width="575" height="385" alt="image" src="https://github.com/user-attachments/assets/35eea8eb-e1eb-447f-9656-cd251a943140" />
 
-![Output9](output.png)
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="1223" height="451" alt="image" src="https://github.com/user-attachments/assets/304010d0-453e-4cb5-bcbb-e9c0c11f11e5" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+SELECT category_id,COUNT(*) as COUNT
+FROM products
+WHERE category_id>2
+GROUP BY category_id;
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="603" height="361" alt="image" src="https://github.com/user-attachments/assets/1a3f613b-8c9d-46ab-8068-4ee77af5c57c" />
+
 
 
 ## RESULT
