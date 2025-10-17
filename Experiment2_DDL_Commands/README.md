@@ -243,17 +243,6 @@ HireDate DATE
 <img width="1313" height="182" alt="image" src="https://github.com/user-attachments/assets/82596c3f-870a-480b-bb89-a0817c73d81d" />
 
 
-```
-```
-
-**Output:**
-
-![Output9](output.png)
-
-**Question 10**
----
--- Paste Question 10 here
-
 ```CREATE TABLE jobs(
 job_id INTEGER PRIMARY KEY,
 job_title VARCHAR(255) DEFAULT ' ',
@@ -264,7 +253,25 @@ max_salary INTEGER
 
 **Output:**
 
-<img width="1067" height="162" alt="image" src="https://github.com/user-attachments/assets/02750a6a-b53e-4ccf-9d97-a4976b3dda13" />
+<img width="1052" height="162" alt="image" src="https://github.com/user-attachments/assets/d538d06d-d656-42d6-8dc5-bb6b11155523" />
+
+
+**Question 10**
+---
+<img width="440" height="238" alt="image" src="https://github.com/user-attachments/assets/f78f6d34-32f3-46dd-a860-966c4a53e083" />
+
+
+```INSERT INTO Customers (ID,NAME,AGE,ADDRESS,SALARY)
+VALUES
+    (1,'Ramesh',32,'Ahmedabad',2000),
+    (2,'Khilan',25,'Delhi',1500),
+    (3,'Kaushik',23,'Kota',2000); 
+```
+
+**Output:**
+
+<img width="1223" height="217" alt="image" src="https://github.com/user-attachments/assets/267c88a2-ffb4-4f80-9223-1ae8ac3d8209" />
+
 
 
 
