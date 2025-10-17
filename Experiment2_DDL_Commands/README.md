@@ -108,7 +108,8 @@ CREATE TABLE Table_Name (
 -- <img width="852" height="355" alt="image" src="https://github.com/user-attachments/assets/2068e2fa-0812-4078-9f5d-9afe521cae19" />
 
 
-```INSERT INTO Products( ProductID, ProductName, Price,Stock)
+```sql
+INSERT INTO Products( ProductID, ProductName, Price,Stock)
 SELECT ProductID, ProductName, Price, Stock
 FROM Discontinued_products; 
 ```
@@ -123,7 +124,8 @@ FROM Discontinued_products;
 <img width="1298" height="276" alt="image" src="https://github.com/user-attachments/assets/b8bc00d6-b268-4f90-bacd-2df342ab5ea2" />
 
 
-```CREATE TABLE contacts(
+```sql
+CREATE TABLE contacts(
 contact_id INTEGER PRIMARY KEY,
 first_name TEXT NOT NULL,
 last_name TEXT NOT NULL,
@@ -140,7 +142,8 @@ phone TEXT NOT NULL CHECK (length(phone)>=10)
 ---
 
 
-```ALTER TABLE customer
+```sql
+ALTER TABLE customer
 ADD COLUMN email VARCHAR(100);
 ```
 
@@ -154,7 +157,8 @@ ADD COLUMN email VARCHAR(100);
 <img width="1023" height="313" alt="image" src="https://github.com/user-attachments/assets/b4e1772d-992b-4299-b01c-ce0ecd81fb8a" />
 
 
-```ALTER TABLE Student_details
+```sql
+ALTER TABLE Student_details
 ADD COLUMN MobileNumber NUMBER;
 ALTER TABLE Student_details
 ADD COLUMN Address VARCHAR(100);
@@ -170,7 +174,8 @@ ADD COLUMN Address VARCHAR(100);
 <img width="843" height="172" alt="image" src="https://github.com/user-attachments/assets/d8c9da17-2ea1-48bc-bd58-f2400184134e" />
 
 
-```INSERT INTO Products(ProductID, Name, Category, Price, Stock )
+```sql
+INSERT INTO Products(ProductID, Name, Category, Price, Stock )
 VALUES(104,'Tablet','Electronics',100,50)
 ```
 
@@ -184,7 +189,8 @@ VALUES(104,'Tablet','Electronics',100,50)
 <img width="736" height="311" alt="image" src="https://github.com/user-attachments/assets/f419791a-540c-4efe-a52c-d14108a960cd" />
 
 
-```CREATE TABLE item(
+```sql
+CREATE TABLE item(
 item_id TEXT PRIMARY KEY,
 item_desc TEXT NOT NULL,
 rate INTEGER NOT NULL,
@@ -204,7 +210,8 @@ FOREIGN KEY (icom_id) REFERENCES company(com_id) ON UPDATE CASCADE ON DELETE CAS
 <img width="897" height="217" alt="image" src="https://github.com/user-attachments/assets/ae21b711-80bd-44e3-854c-1c90756cb77c" />
 
 
-```CREATE TABLE Shipments(
+```sql
+CREATE TABLE Shipments(
 ShipmentID INTEGER PRIMARY KEY,
 ShipmentDate DATE,
 SupplierID INTEGER,
@@ -225,7 +232,8 @@ FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
 <img width="642" height="306" alt="image" src="https://github.com/user-attachments/assets/35fdd73d-45a3-4986-9f4c-ca6c52fcd4aa" />
 
 
-```CREATE TABLE Employees(
+```sql
+CREATE TABLE Employees(
 EmployeeID INTEGER,
 FirstName TEXT,
 LastName TEXT,
@@ -243,7 +251,8 @@ HireDate DATE
 <img width="1313" height="182" alt="image" src="https://github.com/user-attachments/assets/82596c3f-870a-480b-bb89-a0817c73d81d" />
 
 
-```CREATE TABLE jobs(
+```sql
+CREATE TABLE jobs(
 job_id INTEGER PRIMARY KEY,
 job_title VARCHAR(255) DEFAULT ' ',
 min_salary INTEGER DEFAULT 8000,
@@ -261,7 +270,8 @@ max_salary INTEGER
 <img width="440" height="238" alt="image" src="https://github.com/user-attachments/assets/f78f6d34-32f3-46dd-a860-966c4a53e083" />
 
 
-```INSERT INTO Customers (ID,NAME,AGE,ADDRESS,SALARY)
+```sql
+INSERT INTO Customers (ID,NAME,AGE,ADDRESS,SALARY)
 VALUES
     (1,'Ramesh',32,'Ahmedabad',2000),
     (2,'Khilan',25,'Delhi',1500),
