@@ -159,12 +159,16 @@ FROM orders
 
 
 ```sql
--- Paste your SQL code below for Question 8
+SELECT age,min(Income) as Income
+FROM employee
+GROUP BY age
+HAVING min(Income)<1000000;
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="705" height="455" alt="image" src="https://github.com/user-attachments/assets/48417b26-51c7-4830-bf91-913687045e3b" />
+
 
 **Question 9**
 ---
