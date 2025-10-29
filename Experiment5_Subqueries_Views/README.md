@@ -204,7 +204,8 @@ WHERE ADDRESS = 'Delhi';
 
 **Question 10**
 ---
-<img width="891" height="555" alt="image" src="https://github.com/user-attachments/assets/b8e904de-8368-4d1f-be5b-d388dff19cd1" />
+<img width="896" height="757" alt="image" src="https://github.com/user-attachments/assets/20c65c69-4295-494f-998d-23f611cd48d8" />
+
 
 
 ```sql
