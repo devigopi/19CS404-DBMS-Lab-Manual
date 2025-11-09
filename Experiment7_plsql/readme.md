@@ -34,7 +34,7 @@ END;
 2.BEGIN...END – The main executable block.
 3.IF...ELSE – Compares the two numbers.
 4.DBMS_OUTPUT.PUT_LINE – Displays the result on the screen.
-
+```
 PL/SQL query
 DECLARE
     num1 NUMBER := 25;
@@ -51,11 +51,8 @@ BEGIN
 END;
 /
 
-
 **Expected Output:**
 The greatest number is: 40
-
-
 
 ---
 
@@ -67,7 +64,7 @@ The greatest number is: 40
 3.sum – Variable to store the running total.
 4.The WHILE loop adds numbers from 1 to n.
 5.DBMS_OUTPUT.PUT_LINE displays the final result.
-
+```
 PL/SQL Program
 DECLARE
     n NUMBER := 10;       -- You can change this value or use &n for user input
@@ -83,9 +80,6 @@ BEGIN
 END;
 /
 
-
-
-
 **Expected Output:**  
 The sum of first 10 natural numbers is: 55
 
@@ -99,7 +93,7 @@ The sum of first 10 natural numbers is: 55
 2.a, b, and c → variables to hold consecutive Fibonacci numbers.
 3.A WHILE loop calculates the next term each time and appends it to the string result.
 4.Finally, DBMS_OUTPUT.PUT_LINE prints the series in one line, neatly formatted.
-
+```
 PL/SQL Program
 
 DECLARE
@@ -141,7 +135,7 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 3.rev → Accumulates the reversed number.
 4.MOD(temp, 10) extracts the last digit, and FLOOR(temp / 10) removes it.
 5.The loop continues until all digits are processed.
-
+```
 PL/SQL Program
 DECLARE
     n NUMBER := 1535;      -- Input number
@@ -175,7 +169,7 @@ Reversed number is 5351
 1.a, b, c → store the three numbers to compare.
 2.IF–ELSIF–ELSE statements are used to check which number is the largest.
 3.DBMS_OUTPUT.PUT_LINE displays the result clearly in the expected format.
-  
+```  
 PL/SQL Program
   DECLARE
     a NUMBER := 10;
@@ -203,4 +197,5 @@ Largest of three number is 15
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
+
 
