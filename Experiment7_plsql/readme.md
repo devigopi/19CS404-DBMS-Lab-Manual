@@ -28,12 +28,13 @@ END;
 # PL/SQL Programs – Steps and Expected Output
 
 ## 1. Write a PL/SQL program to find the Greatest of Two Numbers
-
+```
 ### Steps:
 1.DECLARE – Used to declare variables (num1, num2, greatest).
 2.BEGIN...END – The main executable block.
 3.IF...ELSE – Compares the two numbers.
 4.DBMS_OUTPUT.PUT_LINE – Displays the result on the screen.
+```
 ```
 PL/SQL query
 DECLARE
@@ -57,13 +58,14 @@ The greatest number is: 40
 ---
 
 ## 2. Write a PL/SQL program to Calculate Sum of First N Natural Numbers
-
+```
 ### Steps:
 1.n – The limit up to which you want to calculate the sum.
 2.i – Loop counter starting from 1.
 3.sum – Variable to store the running total.
 4.The WHILE loop adds numbers from 1 to n.
 5.DBMS_OUTPUT.PUT_LINE displays the final result.
+```
 ```
 PL/SQL Program
 DECLARE
@@ -87,12 +89,13 @@ The sum of first 10 natural numbers is: 55
 ---
 
 ## 3. Write a PL/SQL program to generate Fibonacci series
-
+```
 ### Steps:
 1.n → number of terms in the Fibonacci series.
 2.a, b, and c → variables to hold consecutive Fibonacci numbers.
 3.A WHILE loop calculates the next term each time and appends it to the string result.
 4.Finally, DBMS_OUTPUT.PUT_LINE prints the series in one line, neatly formatted.
+```
 ```
 PL/SQL Program
 
@@ -128,13 +131,14 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 ---
 
 ## 4. Write a PL/SQL Program to display the number in Reverse Order
-
+```
 ### Steps:
 1.n → The number to be reversed.
 2.rem → Stores the last digit of the number.
 3.rev → Accumulates the reversed number.
 4.MOD(temp, 10) extracts the last digit, and FLOOR(temp / 10) removes it.
 5.The loop continues until all digits are processed.
+```
 ```
 PL/SQL Program
 DECLARE
@@ -164,11 +168,12 @@ Reversed number is 5351
 ---
 
 ## 5. Write a PL/SQL program to find the largest of three numbers
-
+```
 ### Steps:
 1.a, b, c → store the three numbers to compare.
 2.IF–ELSIF–ELSE statements are used to check which number is the largest.
 3.DBMS_OUTPUT.PUT_LINE displays the result clearly in the expected format.
+```
 ```  
 PL/SQL Program
   DECLARE
@@ -197,6 +202,7 @@ Largest of three number is 15
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
+
 
 
 
