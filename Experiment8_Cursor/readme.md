@@ -243,7 +243,7 @@ The program should display the employee details within the specified salary rang
 - Insert sample department numbers for employees.
 - Use a cursor FOR loop to fetch and display employee names along with their department numbers.
 - Implement exception handling to catch the relevant exceptions.
-- ```
+-  ```
   PL/SQL Program
   -- Enable DBMS output
 SET SERVEROUTPUT ON;
