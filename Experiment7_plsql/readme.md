@@ -50,7 +50,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('The greatest number is: ' || greatest);
 END;
 /
-
+```
 **Expected Output:**
 The greatest number is: 40
 
@@ -79,7 +79,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('The sum of first ' || n || ' natural numbers is: ' || sum);
 END;
 /
-
+```
 **Expected Output:**  
 The sum of first 10 natural numbers is: 55
 
@@ -119,7 +119,7 @@ BEGIN
 END;
 /
 
-
+```
 
 **Expected Output:**  
 n = 7  
@@ -156,7 +156,7 @@ BEGIN
 END;
 /
 
-
+```
 **Expected Output:**  
 n = 1535  
 Reversed number is 5351
@@ -189,7 +189,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Largest of three number is ' || largest);
 END;
 /
-
+```
 
 **Expected Output:**  
 a = 10, b = 9, c = 15  
@@ -197,5 +197,6 @@ Largest of three number is 15
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
+
 
 
