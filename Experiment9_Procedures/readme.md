@@ -70,8 +70,7 @@ CREATE OR REPLACE PROCEDURE FIND_SQUARE (num IN NUMBER) IS square NUMBER;
      FIND_SQUARE(6);
   END;
   /
-
-
+```
 **Expected Output:**  
 Square of 6 is 36
 
@@ -89,7 +88,7 @@ OUTPUT:
 - Use a loop to calculate the factorial.
 - Return the result using the `RETURN` statement.
 - Call the function using a `SELECT` statement or in an anonymous block.
-
+```
 PL/SQL query
 CREATE OR REPLACE FUNCTION GET_FACTORIAL(n IN NUMBER)
 RETURN NUMBER
@@ -114,7 +113,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Factorial of ' || num || ' is ' || fact);
 END;
 /
-
+```
 
 **Expected Output:**  
 Factorial of 5 is 120
@@ -132,7 +131,7 @@ OUTPUT:
 - Accept an input parameter.
 - Use the `MOD` function to check if the number is divisible by 2.
 - Display whether it is Even or Odd using `DBMS_OUTPUT.PUT_LINE`.
-
+```
 PL/SQL query
 
 CREATE OR REPLACE PROCEDURE check_even_odd(num IN NUMBER) IS
@@ -148,7 +147,7 @@ BEGIN
     check_even_odd(12);
 END;
 /
-
+```
 **Expected Output:**  
 12 is Even
 
@@ -166,7 +165,7 @@ OUTPUT:
 - Use a loop to reverse the digits of the number.
 - Return the reversed number.
 - Call the function and display the output.
-
+```
 PL/SQL query
 
 CREATE OR REPLACE FUNCTION reverse_number(n IN NUMBER)
@@ -191,7 +190,7 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Reversed number of ' || input_num || ' is ' || reversed_num);
 END;
 /
-
+```
 **Expected Output:**  
 Reversed number of 1234 is 4321
 
@@ -208,7 +207,7 @@ OUTPUT:
 - Accept an input number.
 - Use a loop from 1 to 10 to multiply the input number.
 - Display the multiplication results using `DBMS_OUTPUT.PUT_LINE`.
-
+```
 PL/SQL query
 CREATE OR REPLACE PROCEDURE print_table(num IN NUMBER) IS
 BEGIN
@@ -222,7 +221,7 @@ BEGIN
     print_table(5);
 END;
 /
-
+```
 **Expected Output:**  
 Multiplication table of 5:  
 5 x 1 = 5  
