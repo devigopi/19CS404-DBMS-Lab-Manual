@@ -75,6 +75,8 @@ CREATE OR REPLACE PROCEDURE FIND_SQUARE (num IN NUMBER) IS square NUMBER;
 Square of 6 is 36
 
 OUTPUT:
+
+
 <img width="347" height="52" alt="image" src="https://github.com/user-attachments/assets/33aa8a7d-e161-4a5a-9b59-934dafc315e4" />
 
 
@@ -119,6 +121,8 @@ END;
 Factorial of 5 is 120
 
 OUTPUT:
+
+
 <img width="358" height="52" alt="image" src="https://github.com/user-attachments/assets/9e86388b-63f4-470e-ae29-3e919c1eb188" />
 
 
@@ -152,6 +156,8 @@ END;
 12 is Even
 
 OUTPUT:
+
+
 <img width="157" height="52" alt="image" src="https://github.com/user-attachments/assets/5015ba66-ac7d-4dff-a0a6-2661a8dbf4e0" />
 
 
@@ -195,6 +201,8 @@ END;
 Reversed number of 1234 is 4321
 
 OUTPUT:
+
+
 <img width="375" height="43" alt="image" src="https://github.com/user-attachments/assets/a8e52c32-6a61-435f-8618-ddca31ede6ea" />
 
 
@@ -231,6 +239,8 @@ Multiplication table of 5:
 5 x 10 = 50
 
 OUTPUT:
+
+
 <img width="557" height="492" alt="image" src="https://github.com/user-attachments/assets/9a913522-74b9-491a-9dc0-2e9aedcc565f" />
 
 
